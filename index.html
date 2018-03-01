@@ -6,7 +6,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/unslider.css">
+   <link rel="stylesheet" href="css/unslider-dots.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+   <style type="text/css">.unslider({arrows: false})</style>
 
    <!-- Google Fonts -->
    
@@ -14,17 +17,87 @@
    <!-- Link to your CSS -->
    <link rel="stylesheet" type="text/css" href="css/main.css">
 
-   <title>Hello, world!</title>
+   <title>Stax Museum | Music Legends</title>
  </head>
  <body>
    <!-- Your Code Starts Here -->
-   
-   
+   <header>
+      <ul class="main-nav">
+         <li><a href="#description">History</a></li>
+         <li><a href="#details">About</a></li>
+         <li><img src="img/stax-logo.png"></li>
+         <li><a href="#gallery">Gallery</a></li>
+         <li><a href="https://en.wikipedia.org/wiki/Ragdoll" target="_blank">Wikipedia</a></li>
+      </ul>
+      
+   </header>
+   <!-- Image Slider -->
+   <div class="container-fluid img-slider">
+      <div class="row">
+         <div class="automatic-slider">
+            <div align="center">
+               <ul>
+                  <li><img class="image-1 bigger-img" src="img/museum-exhibits.jpg" /></li>
+                  <li><img class="image-1 bigger-img" src="" /></li>
+                  <li><img class="image-1" src="img/bg-home-top.jpg" /></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Image Slider End -->
+
+   <!-- Story of Stax -->
+   <div class="container story">
+      <div class="row">
+         <div class="col-sm-6 bar">
+            <h1 align="center">The Story of Stax</h1>
+            <hr class="underline-bar">
+            <p class="middle">Organized by Memphis’ Stax Records to commemorate the seventh anniversary of the Watts rebellion in Los Angeles, Wattstax was seen by some as the “Afro-American answer to Woodstock”. To make sure everyone who wanted to attend could, tickets were sold for $1 each.</p>
+         </div>
+         
+         <div class="col-sm-6 back-red">
+            <img src="img/stax-story.jpg" class="diff">
+         </div>
+      </div>
+
+      </div>
+   </div>
+   <!-- Story of Stax End -->
+
+   <!-- Story of Stax -->
+   <div class="container story2">
+      <div class="row">
+         <div class="col-md bar">
+            <h1 align="center">Museum Exhibits</h1>
+            <hr class="underline-bar">
+            <p class="middle">See Stax’s impact in our hall of records and hear the classics – or find new favorites – at our listening station.</p>
+         </div>
+         
+         <div class="col-md back-red">
+            <img src="img/museum-exhibits.jpg" class="diff2">
+         </div>
+
+      </div>
+   </div>
+   <!-- Story of Stax End -->
+</body>
+
    <!-- Optional JavaScript -->
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
    <script src="js/unslider.js"></script>
+   <script src="js/unslider-min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+   <script>
+    jQuery(document).ready(function($) {
+      $('.automatic-slider').unslider({
+        autoplay: true,
+        nav: false,
+        infinite: true,
+      });
+    });
+   </script>
  </body>
 </html>
